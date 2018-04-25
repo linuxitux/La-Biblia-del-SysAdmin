@@ -15,4 +15,4 @@ el día" (muy a menudo, generalmente).
 
 * [Capítulo 1: Documentación](capitulo-01.md)
 * [Capítulo 2: Lo difícil (seguridad y backups)](capitulo-02.md)
-
+* [Capítulo 3: La eficiencia importa](capitulo-03.md)
