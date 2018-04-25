@@ -41,7 +41,7 @@ software a la que se le debe rendir tributo.
       nueva versión de una aplicación crítica en producción).
     * Combatir la procrastinación (consultar a un [experto en la materia](http://waitbutwhy.com/2013/11/how-to-beat-procrastination.html).
 
-        ![Gestión del tiempo](images/gestion-tiempo.png)
+![Gestión del tiempo](images/gestion-tiempo.png)
 
 ### Referencias
 

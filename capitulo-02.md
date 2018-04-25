@@ -117,7 +117,7 @@ seguridad y backups.
 * Pensar en términos de redundancia.
     * ¿Hay un backup del backup?
 
-        ![Backup](images/backup.jpg)
+![Backup](images/backup.jpg)
 
 ### Referencias
 
