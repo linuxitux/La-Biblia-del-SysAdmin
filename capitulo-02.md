@@ -118,7 +118,7 @@ seguridad y backups.
     * ¿Hay un backup del backup?
 
 <p style="text-align: center">
-![Backup](images/backup.jpg)
+<img src="images/backup.jpg" alt="Backup">
 </p>
 
 ### Referencias
