@@ -4,6 +4,8 @@ Este primer capítulo trata el tema más importante en el trabajo de un
 [Administrador de Sistemas](https://es.wikipedia.org/wiki/Administrador_de_sistemas)
 la documentación.
 
+### Documentación
+
 * Documentar absolutamente todo el trabajo realizado.
   * Mantener un registro diario de las actividades.
     * Utilizar al menos un archivo de texto plano.
@@ -59,3 +61,8 @@ la documentación.
       fuentes de información valiosa (sean tutoriales, manuales, FAQs, guías,
       wikis, listas de correo, foros, etc.) organizado por tópicos y
       tecnologías.
+
+### Referencias
+
+* [Joe Chung - General SysAdmin Principles &amp; Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
+
