@@ -11,3 +11,7 @@ Los Administradores de Sistemas, más conocidos como SysAdmins, somos a menudo
 los superhéroes del departamento de sistemas, aquellos destinados a "salvar
 el día" (muy a menudo, generalmente).
 
+## Índice
+
+* [Capítulo 1: Documentación](blob/master/capitulo-01.md)
+
