@@ -14,4 +14,5 @@ el día" (muy a menudo, generalmente).
 ## Índice
 
 * [Capítulo 1: Documentación](capitulo-01.md)
+* [Capítulo 2: Lo difícil (seguridad y backups)](capitulo-02.md)
 
