@@ -116,7 +116,6 @@ seguridad y backups.
       seguridad.
 * Pensar en términos de redundancia.
     * ¿Hay un backup del backup?
-
         ![Backup](images/backup.jpg)
 
 ### Referencias
