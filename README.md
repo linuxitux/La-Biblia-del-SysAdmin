@@ -22,7 +22,12 @@ el día" (muy a menudo, generalmente).
 * [Capítulo 7: Gestión de software y mantenimiento del sistema](capitulo-07.md)
 * [Capítulo 8: Usuarios y soporte](capitulo-08.md)
 * [Capítulo 9: Estandarización vs. diversidad](capitulo-09.md)
+* [Capítulo 10: Promoción, ética y aprendizaje](capitulo-10.md)
 
 ## Portada
 
 ![Portada](images/biblia_sysadmin_2.png)
+
+## Licencia
+
+Esta Biblia del SysAdmin se libera bajo la [licencia MIT](LICENSE).
