@@ -93,10 +93,10 @@ Es necesario realizar ciertos chequeos antes de apagar o reiniciar un sistema.
       dolores de cabeza. La mayoría de los servicios proveen herramientas para
       verificar la validez y correcta sintaxis de un archivo de configuración,
       por ejemplo para Apache y Nginx:
-```
+~~~~
 apache2ctl configtest
 service nginx configtest
-```
+~~~~
     * ¿Tenemos una copia de respaldo de la configuración anterior al alcance de
       la mano?
 
