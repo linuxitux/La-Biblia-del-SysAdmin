@@ -170,7 +170,7 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
         * Esto tiene el beneficio extra de reducir el soporte y dolores de
           cabeza.
         * Utilizar una configuración sensible para los perfiles de las shells.
-        * Recurrir a `[sudo](https://www.linuxito.com/seguridad/464-como-permitir-que-un-usuario-pueda-ejecutar-como-root-solo-un-comando-especifico-utilizando-sudo)`
+        * Recurrir a [`sudo`](https://www.linuxito.com/seguridad/464-como-permitir-que-un-usuario-pueda-ejecutar-como-root-solo-un-comando-especifico-utilizando-sudo)
           para permitir cierto tipo de operaciones privilegiadas.
             * Sin comprometer la seguridad de los sistemas.
         * Utilizar una interfaz de usuario por defecto (gestor de ventanas o

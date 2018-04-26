@@ -21,6 +21,7 @@ el día" (muy a menudo, generalmente).
 * [Capítulo 6: Automatización y scripting](capitulo-06.md)
 * [Capítulo 7: Gestión de software y mantenimiento del sistema](capitulo-07.md)
 * [Capítulo 8: Usuarios y soporte](capitulo-08.md)
+* [Capítulo 9: Estandarización vs. diversidad](capitulo-09.md)
 
 ## Portada
 
