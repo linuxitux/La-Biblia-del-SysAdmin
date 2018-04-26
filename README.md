@@ -17,6 +17,7 @@ el día" (muy a menudo, generalmente).
 * [Capítulo 2: Lo difícil (seguridad y backups)](capitulo-02.md)
 * [Capítulo 3: La eficiencia importa](capitulo-03.md)
 * [Capítulo 4: Administración y acceso remoto](capitulo-04.md)
+* [Capítulo 5: Reinicios y uptime](capitulo-05.md)
 
 ## Portada
 
