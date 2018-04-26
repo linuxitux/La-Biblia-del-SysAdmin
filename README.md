@@ -18,6 +18,7 @@ el día" (muy a menudo, generalmente).
 * [Capítulo 3: La eficiencia importa](capitulo-03.md)
 * [Capítulo 4: Administración y acceso remoto](capitulo-04.md)
 * [Capítulo 5: Reinicios y uptime](capitulo-05.md)
+* [Capítulo 6: Automatización y scripting](capitulo-06.md)
 
 ## Portada
 

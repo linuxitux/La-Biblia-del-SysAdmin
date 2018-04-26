@@ -36,10 +36,10 @@ de la automatización.
       utilice.
 * Salvo que nos guste demasiado tipear, crear aliases y [scripts](https://www.linuxito.com/buscar?q=script)
   cortos para reducir al máximo el uso de teclado. Incluso para las tareas tan
-  triviales como ejecutar `apt-get update &amp;&amp; apt-get upgrade`:
+  triviales como ejecutar `apt-get update && apt-get upgrade`:
 
   ```
-  alias actualizar='apt-get update &amp;&amp; apt-get upgrade'
+  alias actualizar='apt-get update && apt-get upgrade'
   ```
 
 * Familiarizarse con el uso de la tecla `TAB` para auto-completar y el historial
@@ -58,7 +58,7 @@ de la automatización.
     * Conocer herramientas como `expect` para interactuar con procesos
       interactivos de manera desatendida.
     * Aprender a generar parámetros de manera dinámica con `xargs` y redirigir
-      la entrada estándar (`&lt;`).
+      la entrada estándar (`<`).
     * Testear y verificar el funcionamiento de los scripts ejecutados por `cron`
       como cualquier otro programa. Hacer uso del `syslog` para diagnosticar
       errores.
@@ -71,8 +71,8 @@ de la automatización.
     * Dominar las técnicas de [paralelismo](https://www.linuxito.com/gnu-linux/nivel-alto/507-mejorando-mi-sistema-de-actualizacion-de-servidores),
       concurrencia y subprocesos al momento de crear scripts. Esto implica
       conocer los comandos embebidos en las shells, tales como `jobs`, `bg`,
-      `fg`, `&amp;`, etc.
+      `fg`, `&`, etc.
 
 ### Referencias
 
-* [Joe Chung - General SysAdmin Principles &amp; Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
+* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
