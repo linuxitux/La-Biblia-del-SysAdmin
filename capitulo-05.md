@@ -25,59 +25,78 @@ de diferentes tipos de servicios.
 
 Es necesario realizar ciertos chequeos antes de apagar o reiniciar un sistema.
 
-<ul>
-<li>¿Hay algún usuario logueado en el sistema?</li>
-
-    <ul>
-    <li>En caso de servicios HTTP, <a href="https://www.linuxito.com/gnu-linux/nivel-alto/625-como-saber-si-hay-usuarios-conectados-en-mi-servidor-apache">¿hay actividad en el servidor Web?</a>. Determinar si hay usuarios y sesiones activas, y conexiones establecidas.</li>
-    <li>Si se trata de sistemas que proveen servicios a otros servidores, ¿hay conexiones establecidas?</li>
-    </ul>
-
-<li>Si se debe realizar una tarea de mantenimiento crítica, como actualizaciones, migraciones o conversiones ¿durante cuánto tiempo es posible mantener el sistema apagado o el servicio inaccesible?</li>
-
-    <ul>
-    <li>Es necesario planificar cuidadosamente un periodo de <i>downtime</i> para afectar lo menos posible el servicio, más precisamente a los usuarios del mismo.</li>
-    <li>Si no es posible encontrar un período de baja carga o utilización, será necesario coordinar con las áreas responsables, representantes o usuarios del servicio en cuestión para planificar la baja del mismo, en cual caso se deberá notificar el período de interrupción del servicio con su debida anticipación, a través canales de comunicación formales, contando con la autorización de los responsables o representantes del servicio.</li>
-    <li>De cualquier forma siempre se debe notificar una baja planificada. Nunca dar de baja un servicio o reiniciar un sistema operativo sin la debida notificación.</li>
-    </ul>
-
-<li>¿Existe un <a href="https://www.linuxito.com/nix/711-la-biblia-del-sysadmin-capitulo-2-lo-dificil-seguridad-y-backups">backup</a> para el sistema o servicio involucrado? ¿Es necesario disponer de un backup? En tal caso, ¿se han ejecutado las pruebas de recuperación correspondientes?</li>
-
-    <ul>
-    <li>Es de vital importancia verificar los backups y procedimientos de recuperación, especialmente para el caso crítico de <a href="https://www.linuxito.com/gnu-linux/nivel-alto/388-como-migrar-un-servidor-en-produccion-desde-debian-6-a-7">migraciones y conversiones en producción</a>.</li>
-    <li>Siempre planificar, probar y documentar este tipo de tareas críticas en <a href="https://www.linuxito.com/programacion/237-el-modelo-de-desarrollo-testing-y-produccion">entornos de desarrollo/testing</a> para evitar cualquier tipo de inconvenientes ni sorpresas desagradables.</li>
-    </ul>
-
-<li>Siempre preguntarse si es realmente necesario reiniciar un sistema.</li>
-
-    <ul>
-    <li>En la actualidad, las tecnologías de virtualización hacen que sea cada vez menos frecuente la necesidad de un reinicio. Incluso es posible <a href="https://www.linuxito.com/gnu-linux/nivel-alto/714-redimensionar-un-disco-scsi-en-linux-sin-necesidad-de-reinicios">redimensionar un disco rígido sin necesidad de reiniciar el sistema</a>.</li>
-    <li>¿Estamos reiniciando el sistema/servicio para tratar de resolver un inconveniente?</li>
-         <ul>
-         <li>Esta es una estrategia pobre al momento de encarar un problema, y es un comportamiento lamentablemente común en SysAdmins Jr. o con poca experiencia, la cual demuestra falta de conocimiento y metodologías ante colegas, superiores y usuarios por igual.</li>
-         <li>Nunca reiniciar un sistema para tratar que vuelva a la vida. Este comportamiento tiene dos consecuencias desastrosas, si tenemos la "suerte" de que el problema se solucione:</li>
-             <ul>
-             <li>Primero, es probable que nunca sepamos qué ocurrió realmente ni qué fue lo que produjo el error. A veces se presentan circunstancias específicas como <i>deadlocks</i>, conflictos de recursos y otras excepciones que no quedan registradas en un log (o no es posible diagnosticar a través de los mismos). Al mismo tiempo, al reiniciar el servicio/sistema se pierden las condiciones que llevaron a producir el error. Con lo cual será imposible encontrar la solución definitiva para que el problema no vuelva a ocurrir.</li>
-             <li>Segundo, hemos perdido una buena oportunidad para aprender algo nuevo. A partir del momento en que resolvemos un problema reiniciando el servicio o sistema, nos convertimos en el robot que reinicia el servicio cuando falla, lo cual es lamentable y patético.</li>
-         </ul>
-         <li>Por otro lado, si el problema no se soluciona, sólo perdimos tiempo y acumulamos frustración.</li>
-         </ul>
-    </ul>
-
-<li>Si vamos a reiniciar un sistema operativo, ¿ha sido el <i>bootloader</i> correctamente configurado?</li>
-
-    <ul><li>Especialmente para el caso de <i>upgrades</i> de sistemas operativos Unix/Linux, jamás olvidar actualizar el bootloader y contar con más de un kernel disponible para el inicio.</li></ul>
-
-<li>En caso de fallo al iniciar, ¿existe una forma alternativa para acceder al sistema? Ver el <a href="https://www.linuxito.com/nix/806-la-biblia-del-sysadmin-capitulo-4-administracion-y-acceso-remoto">Capítulo 4</a> al respecto.</li>
-
-<li>Si estamos reiniciando un servicio, ¿hemos comprobado que su configuración sea correcta?</li>
-
-    <ul>
-    <li>Es frecuente la necesidad de reiniciar un servicio cuando se cambia su configuración. En tales casos es indispensable verificar la correctitud de la configuración, especialmente su sintaxis, para evitar <i>downtimes</i> y dolores de cabeza. La mayoría de los servicios proveen herramientas para verificar la validez y correcta sintaxis de un archivo de configuración, por ejemplo para Apache y Nginx:</li>
-<pre>apache2ctl configtest
-service nginx configtest
-</pre>
-    <li>¿Tenemos una copia de respaldo de la configuración anterior al alcance de la mano?</li>
+* ¿Hay algún usuario logueado en el sistema?
+    * En caso de servicios HTTP, [¿hay actividad en el servidor Web?](https://www.linuxito.com/gnu-linux/nivel-alto/625-como-saber-si-hay-usuarios-conectados-en-mi-servidor-apache).
+      Determinar si hay usuarios y sesiones activas, y conexiones establecidas.
+    * Si se trata de sistemas que proveen servicios a otros servidores, ¿hay
+      conexiones establecidas?
+* Si se debe realizar una tarea de mantenimiento crítica, como actualizaciones,
+  migraciones o conversiones ¿durante cuánto tiempo es posible mantener el
+  sistema apagado o el servicio inaccesible?
+    * Es necesario planificar cuidadosamente un periodo de *downtime* para
+      afectar lo menos posible el servicio, más precisamente a los usuarios del
+      mismo.
+    * Si no es posible encontrar un período de baja carga o utilización, será
+      necesario coordinar con las áreas responsables, representantes o usuarios
+      del servicio en cuestión para planificar la baja del mismo, en cual caso
+      se deberá notificar el período de interrupción del servicio con su debida
+      anticipación, a través canales de comunicación formales, contando con la
+      autorización de los responsables o representantes del servicio.
+    * De cualquier forma siempre se debe notificar una baja planificada. Nunca
+      dar de baja un servicio o reiniciar un sistema operativo sin la debida
+      notificación.
+* ¿Existe un [backup](capitulo-02.md) para el sistema o servicio involucrado?
+  ¿Es necesario disponer de un backup? En tal caso, ¿se han ejecutado las
+  pruebas de recuperación correspondientes?
+    * Es de vital importancia verificar los backups y procedimientos de
+      recuperación, especialmente para el caso crítico de [migraciones y conversiones en producción](https://www.linuxito.com/gnu-linux/nivel-alto/388-como-migrar-un-servidor-en-produccion-desde-debian-6-a-7).
+    * Siempre planificar, probar y documentar este tipo de tareas críticas en
+      [entornos de desarrollo/testing](https://www.linuxito.com/programacion/237-el-modelo-de-desarrollo-testing-y-produccion)
+      para evitar cualquier tipo de inconvenientes ni sorpresas desagradables.
+* Siempre preguntarse si es realmente necesario reiniciar un sistema.
+    * En la actualidad, las tecnologías de virtualización hacen que sea cada vez
+      menos frecuente la necesidad de un reinicio. Incluso es posible [redimensionar un disco rígido sin necesidad de reiniciar el sistema](https://www.linuxito.com/gnu-linux/nivel-alto/714-redimensionar-un-disco-scsi-en-linux-sin-necesidad-de-reinicios).
+    * ¿Estamos reiniciando el sistema/servicio para tratar de resolver un
+      inconveniente?
+         * Esta es una estrategia pobre al momento de encarar un problema, y es
+           un comportamiento lamentablemente común en SysAdmins Jr. o con poca
+           experiencia, la cual demuestra falta de conocimiento y metodologías
+           ante colegas, superiores y usuarios por igual.
+         * Nunca reiniciar un sistema para tratar que vuelva a la vida. Este
+           comportamiento tiene dos consecuencias desastrosas, si tenemos la
+           "suerte" de que el problema se solucione:
+             * Primero, es probable que nunca sepamos qué ocurrió realmente ni
+               qué fue lo que produjo el error. A veces se presentan
+               circunstancias específicas como *deadlocks*, conflictos de
+               recursos y otras excepciones que no quedan registradas en un log
+               (o no es posible diagnosticar a través de los mismos). Al mismo
+               tiempo, al reiniciar el servicio/sistema se pierden las
+               condiciones que llevaron a producir el error. Con lo cual será
+               imposible encontrar la solución definitiva para que el problema
+               no vuelva a ocurrir.
+             * Segundo, hemos perdido una buena oportunidad para aprender algo
+               nuevo. A partir del momento en que resolvemos un problema
+               reiniciando el servicio o sistema, nos convertimos en el robot
+               que reinicia el servicio cuando falla, lo cual es lamentable y
+               patético.
+         * Por otro lado, si el problema no se soluciona, sólo perdimos tiempo
+           y acumulamos frustración.
+* Si vamos a reiniciar un sistema operativo, ¿ha sido el *bootloader*
+  correctamente configurado?
+* En caso de fallo al iniciar, ¿existe una forma alternativa para acceder al
+  sistema? Ver el [Capítulo 4](capitulo-04.md) al respecto.
+* Si estamos reiniciando un servicio, ¿hemos comprobado que su configuración
+  sea correcta?
+    * Es frecuente la necesidad de reiniciar un servicio cuando se cambia su
+      configuración. En tales casos es indispensable verificar la correctitud
+      de la configuración, especialmente su sintaxis, para evitar *downtimes* y
+      dolores de cabeza. La mayoría de los servicios proveen herramientas para
+      verificar la validez y correcta sintaxis de un archivo de configuración,
+      por ejemplo para Apache y Nginx:
+  apache2ctl configtest
+  service nginx configtest
+    * ¿Tenemos una copia de respaldo de la configuración anterior al alcance de
+      la mano?
 
 ### Referencias
 
