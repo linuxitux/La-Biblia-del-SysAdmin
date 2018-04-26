@@ -15,7 +15,7 @@ todo acerca de nada.
             * [Debian](https://www.debian.org/) es la mejor apuesta cuando de
               continuidad se trata.
                 * Al igual que muchas distribuciones basadas en Debian, como por
-                  ejemplo [Ubunut](https://www.ubuntu.com/) y [Devuan](https://devuan.org/).
+                  ejemplo [Ubuntu](https://www.ubuntu.com/) y [Devuan](https://devuan.org/).
         * Otras distribuciones poseen mayor continuidad que Debian (notablemente
           Slackware), sin embargo se debe ponderar a su vez el tamaño de la
           comunidad y especialmente el tamaño del equipo de desarrollo.
