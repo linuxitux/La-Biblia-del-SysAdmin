@@ -1,4 +1,4 @@
-## Capítulo 5:
+## Capítulo 5: Reinicios y uptime
 
 Quinto episodio, trata sobre el uptime, principal meta u objetivo de un
 SysAdmin.
@@ -94,10 +94,10 @@ Es necesario realizar ciertos chequeos antes de apagar o reiniciar un sistema.
       verificar la validez y correcta sintaxis de un archivo de configuración,
       por ejemplo para Apache y Nginx:
 
-    ```
-    apache2ctl configtest
-    service nginx configtest
-    ```
+      ```
+      apache2ctl configtest
+      service nginx configtest
+      ```
 
     * ¿Tenemos una copia de respaldo de la configuración anterior al alcance de
       la mano?
