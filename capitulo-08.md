@@ -163,8 +163,8 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
         * Utilizar una distribución GNU/Linux en nuestra estación de trabajo y
           darles Windows a los usuarios sólo va a dificultar nuestra tarea de
           soporte.
-                * Como mínimo se debe contar con una máquina virtual corriendo
-                  el mismo entorno que nuestros usuarios.
+            * Como mínimo se debe contar con una máquina virtual corriendo
+              el mismo entorno que nuestros usuarios.
     * Preocuparse por la usabilidad del entorno de sistema operativo de los
       usuarios.
         * Esto tiene el beneficio extra de reducir el soporte y dolores de
