@@ -44,7 +44,7 @@ todo acerca de nada.
             * No poder realizar una tarea, conectarse a un servidor o abrir un
               archivo a causa de un problema con nuestra estación de trabajo (ya
               sea por un fallo o por falta de soporte para alguna aplicación o
-              protocolo) no solo es vergonzoso para un SysAdmin, sino que hace
+              protocolo) no sólo es vergonzoso para un SysAdmin, sino que hace
               mala publicidad a nuestra querida distro.
                 * A lo largo de los años he visto a colegas linuxeros pasar por
                   situaciones como las siguientes en la oficina:
@@ -62,7 +62,7 @@ todo acerca de nada.
                 * Lamentablemente he visto muy seguido estas situaciones,
                   especialmente con distribuciones *rolling release*, las cuales
                   hacen parecer a GNU/Linux como un SO inestable y poco
-                  confiable. Y todos sabemos que es justamente lo opuesto, solo
+                  confiable. Y todos sabemos que es justamente lo opuesto, sólo
                   que "tu distro" apesta.
             * Por supuesto, siempre vamos a querer experimentar. En tal caso
               dejar las distros "espartanas" y *rolling release* para casa y
