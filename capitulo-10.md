@@ -1,7 +1,7 @@
 ## Capítulo 10: Promoción, ética y aprendizaje
 
 Este capítulo final trata sobre algunos aspectos no estrictamente relacionados
-con lo técnico, pero si lo profesional.
+con lo técnico, pero si con lo profesional.
 
 ### Promoción, ética y aprendizaje
 
@@ -111,9 +111,7 @@ con lo técnico, pero si lo profesional.
 
 De esta forma concluye esta Biblia del SysAdmin (con el perdón de la blasfemia
 para los creyentes) sin descartar la posibilidad de agregar anexos en un futuro
-(en el caso de que sea necesario). Próximamente publicaré una versión en PDF de
-la misma, para imprimir y guardar en la mesa de luz de todo SysAdmin que se
-precie :)
+(en el caso de que sea necesario).
 
 Y por qué no también una versión en formato EPUB para los E-Readers...
 
@@ -121,6 +119,4 @@ Esta Biblia del SysAdmin queda [disponible públicamente en GitHub](https://gith
 y abierta a sugerencias, cambios y correcciones. Al mismo tiempo es liberada
 bajo la [licencia MIT](LICENSE).
 
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
+Se encuentra disponible para su descarga una versión en formato PDF.

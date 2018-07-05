@@ -18,7 +18,8 @@ todo acerca de nada.
                   ejemplo [Ubuntu](https://www.ubuntu.com/) y [Devuan](https://devuan.org/).
         * Otras distribuciones poseen mayor continuidad que Debian (notablemente
           Slackware), sin embargo se debe ponderar a su vez el tamaño de la
-          comunidad y especialmente el tamaño del equipo de desarrollo.
+          comunidad y especialmente el tamaño del equipo de desarrollo. Pero
+          sobre todo, su mantenibilidad.
         * Un tercer criterio a considerar es qué empresa está detrás de, y qué
           intereses persigue, la dirección del proyecto.
     * Si optamos por la estandarización, puede que ocurra que no sepamos
@@ -45,7 +46,7 @@ todo acerca de nada.
               archivo a causa de un problema con nuestra estación de trabajo (ya
               sea por un fallo o por falta de soporte para alguna aplicación o
               protocolo) no sólo es vergonzoso para un SysAdmin, sino que hace
-              mala publicidad a nuestra querida distro.
+              mala publicidad a nuestra querida distro (y a nuestro trabajo).
                 * A lo largo de los años he visto a colegas linuxeros pasar por
                   situaciones como las siguientes en la oficina:
                     * "No puedo abrir archivos con el formato propietario .xyz".
@@ -65,7 +66,7 @@ todo acerca de nada.
                   confiable. Y todos sabemos que es justamente lo opuesto, sólo
                   que "tu distro" apesta.
             * Por supuesto, siempre vamos a querer experimentar. En tal caso
-              dejar las distros "espartanas" y *rolling release* para casa y
+              dejar las distros "espartanas" y/o *rolling release* para casa y
               nuestras computadoras personales.
     * Utilizar múltiples sistemas operativos es todavía una mejor idea.
         * Contar con, al menos, un conocimiento básico sobre otros sistemas
@@ -93,7 +94,3 @@ todo acerca de nada.
     * El secreto está en encontrar un balance entre ambas.
     * Se supone que un SysAdmin debe conocer todo acerca de todo. Ya sabemos que
       es imposible, pero es lo que la sociedad espera de nosotros.
-
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)

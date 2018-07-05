@@ -43,7 +43,7 @@ esencial y algo que todo SysAdmin debe demandar.
       desde una interfaz de red especial (como si estuviésemos sentados
       físicamente en la consola terminal serie del equipo). Esto es de vital
       importancia al momento de realizar tareas críticas como [migraciones en producción](https://www.linuxito.com/gnu-linux/nivel-alto/388-como-migrar-un-servidor-en-produccion-desde-debian-6-a-7).
-    * Para los sistemas en la nube ([IaaS](https://en.wikipedia.org/wiki/Cloud_computing#Infrastructure_as_a_service_.28IaaS.29),
+    * Para los sistemas en la nube ([IaaS](https://en.wikipedia.org/wiki/Cloud_computing#Infrastructure_as_a_service_.28IaaS.29)),
       ¿ofrece el proveedor más de un acceso a dichos sistemas (consolas Web,
       VPNs, etc.)? Nuevamente, en caso de tener incidencia en los procesos de
       compras, asegurarse que estos accesos estén incluídos dentro del soporte
@@ -59,7 +59,8 @@ esencial y algo que todo SysAdmin debe demandar.
       [`scp`](https://www.linuxito.com/gnu-linux/nivel-basico/167-como-transferir-archivos-de-forma-segura-utilizando-ssh),
       [`sftp`](https://www.linuxito.com/gnu-linux/nivel-alto/187-configurar-sftp-en-red-hat-enterprise-linux-5-5),
       [`dig`](https://www.linuxito.com/gnu-linux/nivel-alto/242-como-instalar-dig-en-red-hat-fedora-centos),
-      `ping`, `traceroute`, etc.
+      `ping`, `traceroute`, [`openssl`](https://www.linuxito.com/seguridad/366-verificar-conexiones-ssl-tls-desde-linea-de-comandos-con-openssl),
+      , `host`, `nslookup`, `arp`, etc.
     * Aprender a [interactuar con los protocolos de red](https://www.linuxito.com/gnu-linux/nivel-medio/328-interactuar-con-un-servidor-de-correo-pop-mediante-telnet-netcat)
       más utilizados: HTTP, FTP, SMTP, POP3, etc.
 * Aprender a implementar *port forwarding* y túneles SSH.
@@ -67,7 +68,3 @@ esencial y algo que todo SysAdmin debe demandar.
       entre sistemas remotos y [redirigir tráfico a través de SSH](https://www.linuxito.com/gnu-linux/nivel-medio/550-lanzar-aplicaciones-graficas-desde-una-sesion-ssh).
     * Conocer el uso de [túneles SSH](https://www.linuxito.com/seguridad/76-como-crear-un-tunel-ssh-a-traves-de-un-proxy-http)
       para encriptar tráfico de protocolos planos (por ejemplo [VNC](https://www.linuxito.com/gnu-linux/nivel-alto/182-como-acceder-a-la-consola-grafica-de-una-maquina-virtual-kvm-en-un-host-sin-entorno-grafico)).
-
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)

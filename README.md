@@ -6,6 +6,8 @@ todo SysAdmin debe respetar, practicar y predicar a sus pares. Estos
 principios los he tomado (y orgullosamente puedo decir que he respetado casi
 en su totalidad) del artículo [General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
 publicado por el [Dr. Joe Chung](https://www.monmouth.edu/academics/CSSE/faculty/chung.asp).
+A su vez he extendido estos principios agregando muchos conceptos fruto de mi
+propia experiencia profesional.
 
 Los Administradores de Sistemas, más conocidos como SysAdmins, somos a menudo
 los superhéroes del departamento de sistemas, aquellos destinados a "salvar
@@ -23,6 +25,10 @@ el día" (muy a menudo, generalmente).
 * [Capítulo 8: Usuarios y soporte](capitulo-08.md)
 * [Capítulo 9: Estandarización vs. diversidad](capitulo-09.md)
 * [Capítulo 10: Promoción, ética y aprendizaje](capitulo-10.md)
+
+### Referencias
+
+* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
 
 ## Portada
 

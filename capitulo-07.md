@@ -6,11 +6,11 @@ SysAdmin: instalar, configurar y mantener software.
 ### Gestión de software y mantenimiento del sistema
 
 * Instalación de software
-    * Siempre utilizar fuentes oficiales para descargar software a instalar (por
-      ejemplo: Debian, Microsoft)
+    * Siempre recurrir a fuentes oficiales para descargar software a instalar
+      (por ejemplo: Debian, Microsoft)
         * En el caso de distribuciones GNU/Linux como Debian, la mayor parte del
           software puede ser instalado desde el gestor de paquetes ejecutando
-          `apt-get` o `aptitude` sin necesidad de agregar repositorios o
+          `apt-get`, `aptitude` o `apt` sin necesidad de agregar repositorios o
           *mirrors* de terceros.
         * En el caso de otros sistemas operativos como Microsoft Windows,
           siempre descargar actualizaciones y software desde el sitio oficial.
@@ -30,7 +30,8 @@ SysAdmin: instalar, configurar y mantener software.
       no hay un repositorio externo recomendado, lo recomendable es descargar el
       código fuente para compilarlo e instalarlo manualmente.
         * Verificar los *checksums* cada vez que se descarga un fuente vía
-          HTTP/S. Preferentemente descargar fuentes sólo a través de HTTPS.
+          HTTP/S.
+        * Preferentemente descargar fuentes sólo a través de HTTPS.
         * Siempre utilizar un script para configurar, compilar e instalar un
           paquete. Esto permite "recordar" las opciones de configuración
           utilizadas para compilar el paquete, las cuales serán necesarias al
@@ -71,7 +72,7 @@ SysAdmin: instalar, configurar y mantener software.
           seguridad, principalmente para planificar con anticipación las
           actualizaciones críticas y urgentes. Especialmente cuando se trata de
           [actualizaciones que requieren de reinicios](capitulo-05.md) de
-          servicios o, peor aún, del sistema operativo.
+          servicios o, peor aún, del sistema operativo (kernel).
     * Pero las versiones oficiales suelen no estar actualizadas respecto a
       características y funcionalidades. Recordar que los repositorios son
       mantenidos por gente que tiene vida propia, muchas veces como voluntarios,
@@ -107,7 +108,8 @@ SysAdmin: instalar, configurar y mantener software.
           cada distribución en particular (por esta razón no se ven
           distribuciones *rolling-release* corriendo en servidores).
 * Actualizar el sistema operativo, kernel y todo software cuidadosamente.
-    * (Aplicar parches de seguridad, service packs, hotfixes, etc.)
+    * En lo que respecta a aplicar parches de seguridad, service packs,
+      hotfixes, etc.
     * Pensar siempre si es el momento correcto para hacerlo.
         * El sistema, servicio o aplicación corriendo en el servidor ¿está
           siendo utilizada? ¿Hay usuarios logueados?
@@ -126,7 +128,7 @@ SysAdmin: instalar, configurar y mantener software.
 
       ![Read only friday](images/walter-sobchak-read-only-friday.png)
 
-* Instalar sólo software que será realmente utilizado.
+* Instalar sólo aquel software que será realmente utilizado.
     * Todo software innecesario puede contener vulnerabilidades. Sin contar con
       el hecho de que, al no ser utilizado, se le deje de prestar atención y
       quede desactualizado/obsoleto.
@@ -155,10 +157,11 @@ SysAdmin: instalar, configurar y mantener software.
       compilar por nuestros propios medios.
         * Especificar siempre `/usr/local` u `/opt` como directorios de
           instalación.
+            * Nunca dejar que una pieza de software por fuera del gestor de
+              paquetes se instale en los directorios de binarios del sistema
+              (`/bin`, `/sbin`/, `/usr/bin`, `/usr/sbin`, etc.).
         * Antes de instalarlo, pensar en la necesidad de desinstalarlo en un
           futuro. ¿Incluye un mecanismo o script de desinstalación?
-        * Documentar todas las rutas y archivos creados durante la instalación.
-
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
+        * Documentar todas las rutas y archivos creados durante la instalación,
+          y toda modificación realizada en el sistema operativo, su
+          configuración, y cualquier servicio.

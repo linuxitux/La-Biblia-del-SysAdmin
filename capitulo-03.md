@@ -6,7 +6,7 @@ software a la que se le debe rendir tributo.
 ### La eficiencia importa
 
 * Las tecnologías de proxies, cachés o mirrors pueden reducir el uso de ancho de
-  banda en instalaciones a través de Internet y en general.
+  banda y tiempo en instalaciones a través de Internet y en general.
 * Evitar instalaciones manuales a gran escala.
     * Utilizar el [clonado](https://www.linuxito.com/gnu-linux/nivel-alto/165-como-clonar-maquinas-virtuales-kvm)
       de sistemas siempre que sea posible.
@@ -34,7 +34,10 @@ software a la que se le debe rendir tributo.
       mediano y largo plazo.
 * Planificar el uso del tiempo.
     * Crear TODO lists.
-    * Asignar prioridades (y recalcular siempre que sea necesario).
+        * Asignar prioridades (y recalcular siempre que sea necesario).
+    * Hacer uso de algún sistema de gestión de proyectos (como por ejemplo [Trac](https://trac.edgewall.org/))
+      puede ser de gran ayuda para planificar tareas y optimizar el uso del
+      tiempo y recursos humanos.
     * Aprender a postergar solicitudes que tengan baja o nula prioridad (un
       ejemplo es el típico escenario en el cual un usuario pide ayuda por un
       ratón defectuoso, en el preciso momento en el que estamos migrando a una
@@ -42,8 +45,3 @@ software a la que se le debe rendir tributo.
     * Combatir la procrastinación (consultar a un [experto en la materia](http://waitbutwhy.com/2013/11/how-to-beat-procrastination.html)).
 
 ![Gestión del tiempo](images/gestion-tiempo.png)
-
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
-

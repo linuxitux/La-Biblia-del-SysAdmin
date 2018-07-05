@@ -16,7 +16,8 @@ la documentación.
         * Este registro está principalmente destinado a uno mismo:
             * Es nuestra propia FAQ.
             * Es nuestra colección de tutoriales para ayudarnos y ayudar a otros
-              a reproducir un trabajo en el futuro sobre otro sistema.
+              a reproducir en un futuro un mismo trabajo sobre un sistema
+              diferente.
                 * Al momento de documentar una tarea es necesario preguntarse si
                   es suficiente información para que otros puedan reproducirla.
             * Este documento puede crecer mucho al pasar el tiempo, por lo que
@@ -56,13 +57,8 @@ la documentación.
     * Utilizar medios enriquecidos (video) siempre que sea posible.
 * Recordar y resguardar enlaces a todas las fuentes de información valiosa.
     * Para cada entrada, agregar todas las fuentes de información que nos
-      ayudaron a resolver una tarea.
+      ayudaron a resolver una tarea (y si es posible, guardar una copia).
     * Mantener un registro centralizado (y accesible desde cualquier parte) de
       fuentes de información valiosa (sean tutoriales, manuales, FAQs, guías,
       wikis, listas de correo, foros, etc.) organizado por tópicos y
       tecnologías.
-
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
-

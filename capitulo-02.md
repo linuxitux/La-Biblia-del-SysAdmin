@@ -10,14 +10,16 @@ seguridad y backups.
         * Que un sistema sea comprometido o su seguridad vulnerada ("hackeado").
         * Que información importante se pierda o borre y no exista una copia de
           seguridad (backup).
+        * Que un servicio deje de funcionar.
     Los [esquemas de backup](https://www.linuxito.com/gnu-linux/nivel-alto/564-como-crear-un-esquema-de-backup-simple-para-tu-vps),
     seguridad (hardening) y PRD (Plan de Recuperación ante Desastres) deben ser
     las primeras ocupaciones al momento de instalar/configurar un sistema o
     aplicación, y deben tener la mayor prioridad.
-    * En ciertas empresas es necesario luchar a capa y espada (argumentos y
-      justificaciones), todos los días, contra el mal <i>management</i> que sólo
-      quiere que las cosas funcionen rápido y fácil, para luego "cuando haya
-      tiempo" dedicarle un poco a la seguridad y backups.
+    * En ciertas empresas es necesario luchar a capa y espada (es decir,
+      argumentos y justificaciones), todos los días, contra el mal *management*
+      que sólo quiere que las cosas funcionen rápido y fácil, para luego "cuando
+      haya tiempo" dedicarle un poco a la seguridad y backups.
+    * La seguridad nunca debe verse como un gasto, sino una inversión.
     * Preguntarse a menudo ¿cuán bueno es nuestro esquema de backup?
         * ¿Existe hardware *spare* para reemplazar cada uno de los componentes
           de la infraestructura (dispositivos de energía, red, almacenamiento y
@@ -28,8 +30,8 @@ seguridad y backups.
           análisis detallado del mismo? y ¿es posible auditarlo? En caso de
           desastres de grandes magnitudes, ¿tenemos backups disponibles para
           replicar toda la infraestructura cloud en otro proveedor? Claramente
-          la tecnología cloud requiere todo un capítulo aparte, ya que abre todo
-          un abanico de nuevas posibilidades, y la importancia de las cuestiones
+          la tecnología cloud requiere un capítulo aparte, ya que abre todo un
+          abanico de nuevas posibilidades, y la importancia de las cuestiones
           de backup y seguridad aumenta considerablemente.
         * ¿Existe un plan y metodología para restaurar un sistema completo desde
           cero (incluyendo hardware y sistema operativo)?
@@ -40,6 +42,9 @@ seguridad y backups.
           simulacro anual de recuperación ante desastres (PRD). Esta tarea debe
           ser la prioridad #1 en el plan de trabajo anual del equipo para
           mantener a los procedimientos actualizados y probados.
+        * ¿Es nuestro [software de backup](https://www.linuxito.com/gnu-linux/nivel-alto/770-como-instalar-y-configurar-bacula-en-debian)
+          lo suficientemente robusto? ¿Está actualizado? ¿Hemos verificado con
+          éxito los mecanismos de restauración que provee?
         * Recuperar la infraestructura el día del juicio final debe ser una
           tarea de rutina.
     * Monitorear la correctitud e integridad de los sistemas de archivos
@@ -59,18 +64,16 @@ seguridad y backups.
     * Correr un escáner de malware y [rootkits](https://www.linuxito.com/seguridad/129-como-detectar-rootkits-con-rootkit-hunter)
       periódicamente.
         * Preferentemente desde un medio de sólo lectura.
-
-          Respecto a este punto es posible definir un [export NFS](https://www.linuxito.com/gnu-linux/nivel-alto/496-configuracion-de-nfs-en-freebsd),
-          en un servidor de seguridad centralizado, que provea acceso a todas
-          las herramientas de seguridad necesarias en modo de sólo lectura. De
-          esta forma se evita que las mismas puedan ser corrompidas por un
-          atacante (para pasar desapercibido) durante un break-in.
-
-          Esto tiene un beneficio adicional que consiste en evitar tener que
-          replicar una herramienta de seguridad a lo largo de todos los
-          servidores de la infraestructura, lo que simplifica la tarea de
-          mantenerla actualizada. Sólo basta definir un subdirectorio para cada
-          sistema operativo y arquitectura de CPU.
+            * Respecto a este punto es posible definir un [export NFS](https://www.linuxito.com/gnu-linux/nivel-alto/496-configuracion-de-nfs-en-freebsd),
+              en un servidor de seguridad centralizado, que provea acceso a todas
+              las herramientas de seguridad necesarias en modo de sólo lectura. De
+              esta forma se evita que las mismas puedan ser corrompidas por un
+              atacante (para pasar desapercibido) durante un break-in.
+            * Esto tiene un beneficio adicional que consiste en evitar tener que
+              replicar una herramienta de seguridad a lo largo de todos los
+              servidores de la infraestructura, lo que simplifica la tarea de
+              mantenerla actualizada. Sólo basta definir un subdirectorio para cada
+              sistema operativo y arquitectura de CPU.
     * Estar al tanto de las últimas vulnerabilidades, incidentes de seguridad y
       *exploits* descubiertos.
 * Suscribirse a sitios de noticias y listas de correo que provean información de
@@ -116,10 +119,8 @@ seguridad y backups.
       seguridad.
 * Pensar en términos de redundancia.
     * ¿Hay un backup del backup?
+* Y por último, recordar que la seguridad es un proceso, no un producto. Ningún
+producto de software o hardware nos puede proteger de una mala política de
+seguridad, o de una pobre implementación de una buena política de seguridad.
 
 ![Backup](images/backup.jpg)
-
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
-* [Cómo instalar y configurar Bacula en Debian](https://www.linuxito.com/gnu-linux/nivel-alto/770-como-instalar-y-configurar-bacula-en-debian)

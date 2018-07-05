@@ -62,9 +62,11 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
 * En el sentido inverso, se debe evitar dar detalles técnicos innecesarios o
   incomprensibles para el usuario al momento de resolver un problema.
     * No "aburrir" al usuario con detalles de bajo nivel que no comprende.
+        * *"you don't want to end up in the middle of invalid memory!"*
     * Muchas veces no es conveniente que el usuario conozca detalles de la
       implementación de un sistema o aplicación.
-        * No sólo desde el punto de vista de la seguridad...
+        * No sólo desde el punto de vista de la seguridad, sino también desde
+          el punto de vista de nuestra conveniencia.
 * A veces la tarea de un SysAdmin es mucho más dura cuando tiene que lidiar con
   usuarios impacientes y lamentablemente a veces irrespetuosos.
     * Sin embargo la vocación de servicio de un Admin debe ser preponderante.
@@ -80,8 +82,9 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
       conocimientos técnicos, como lo son los desarrolladores.
     * Resulta difícil "bajar a tierra" conceptos técnicos abstractos, y
       viceversa, al momento de comunicarse con usuarios finales.
-        * Sin embargo esta habilidad se puede entrenar y practicar en seminarios
-          o charlas, y por qué no también dictando cursos.
+        * Sin embargo esta habilidad se puede entrenar, y practicar, por ejemplo
+          en seminarios, congresos, conferencias o charlas, y por qué no también
+          dictando [cursos](https://www.linuxito.com/15-miscelaneo/976-curso-introductorio-a-la-administracion-de-sistemas-gnu-linux).
 * Mesa de ayuda
     * Todos estos problemas se observan más frecuentemente en lo que yo llamo
       "la trinchera": el equipo de mesa de ayuda (*helpdesk*).
@@ -94,8 +97,10 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
         * Enviar al perfil técnico si hay un problema con un router inalámbrico.
         * Enviar al perfil social cuando un usuario requiere ayuda con una
           planilla de Excel.
-    * Siempre y cuando el SysAdmin pueda participar en los procesos de selección
-      y haya recursos suficientes, claro está.
+        * Contar con "todoterrenos" es lo ideal, pero son perfiles difíciles de
+          conseguir.
+    * Siempre y cuando el SysAdmin pueda participar en los procesos de
+      reclutamiento y selección, y haya recursos suficientes (claro está).
     * Capacitar constantemente al equipo de mesa de ayuda.
         * En este punto nuestra [documentación](capitulo-01.md) es clave.
     * El equipo de mesa de ayuda debe funcionar como *proxy* de los usuarios.
@@ -113,7 +118,7 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
         * Sin embargo, una vez más, esto debe ocurrir sólo en casos de vida o
           muerte.
         * No es conveniente conocer una contraseña de un usuario.
-            * Muchas veces los usuarios utilizan la misa contraseña en todos los
+            * Muchas veces los usuarios utilizan la misma contraseña en todos los
               sistemas, como por ejemplo su *home banking*. Por ende blanquear
               su contraseña no es de gran ayuda.
             * No queremos "quedar pegados" con futuros incidentes de seguridad.
@@ -172,19 +177,22 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
         * Utilizar una configuración sensible para los perfiles de las shells.
         * Recurrir a [`sudo`](https://www.linuxito.com/seguridad/464-como-permitir-que-un-usuario-pueda-ejecutar-como-root-solo-un-comando-especifico-utilizando-sudo)
           para permitir cierto tipo de operaciones privilegiadas.
+            * Especialmente para poder delegar tareas rutinarias a mesa de
+              ayuda.
             * Sin comprometer la seguridad de los sistemas.
         * Utilizar una interfaz de usuario por defecto (gestor de ventanas o
           escritorio) familiar e intuitivo.
             * Encontrar un balance correcto entre facilidad de uso para el
               usuario, eficiencia y simplicidad de administración.
-            * No siempre es fácil encontrar un balance entre las dos primeras,
+                * No siempre es fácil encontrar un balance entre las dos
+                  primeras.
         * Proveer a los usuarios con las herramientas necesarias para llevar a
           cabo sus tareas. Contar con herramientas ofimáticas adecuadas.
         * Estar abierto a las sugerencias de los usuarios en cuanto a
           aplicaciones, restricciones y limitaciones, manteniendo siempre el
           foco en la seguridad, escalabilidad y mantenibilidad de toda solución
           propuesta.
-            * De nada sirve una aplicación que ningún usuario utilizada, por más
+            * De nada sirve una aplicación que ningún usuario utiliza, por más
               buena que sea.
             * No es de gran ayuda proveer una solución de almacenamiento en la
               nube si la cuota de espacio ofrecida no es suficiente para la
@@ -212,7 +220,3 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
       brechas de seguridad encontradas.
     * El atacante más peligroso y más frecuente es el atacante interno.
     * Jamás caer en la mentalidad del "nunca va a pasar aquí".
-
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)

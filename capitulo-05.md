@@ -81,6 +81,7 @@ Es necesario realizar ciertos chequeos antes de apagar o reiniciar un sistema.
                patético.
          * Por otro lado, si el problema no se soluciona, sólo perdimos tiempo
            y acumulamos frustración.
+         * Y en el peor de los casos, el sistema podría no volver a iniciar.
 * Si vamos a reiniciar un sistema operativo, ¿ha sido el *bootloader*
   correctamente configurado?
 * En caso de fallo al iniciar, ¿existe una forma alternativa para acceder al
@@ -101,7 +102,3 @@ Es necesario realizar ciertos chequeos antes de apagar o reiniciar un sistema.
 
     * ¿Tenemos una copia de respaldo de la configuración anterior al alcance de
       la mano?
-
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)

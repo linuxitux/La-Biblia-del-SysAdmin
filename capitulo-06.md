@@ -72,7 +72,3 @@ de la automatización.
       concurrencia y subprocesos al momento de crear scripts. Esto implica
       conocer los comandos embebidos en las shells, tales como `jobs`, `bg`,
       `fg`, `&`, etc.
-
-### Referencias
-
-* [Joe Chung - General SysAdmin Principles & Guidelines](http://rockhopper.monmouth.edu/cs/jchung/cs471/cs_471_-_general_sysadmin_principles)
