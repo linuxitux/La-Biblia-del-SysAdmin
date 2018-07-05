@@ -42,7 +42,7 @@ con lo técnico, pero si con lo profesional.
         * Cloud computing (IaaS/SaaS/PaaS) en lugar de nuestra propia
           infraestructura (*on premises*).
 
-![On premises](images/on_premises.jpg)
+        ![On premises](images/on_premises.jpg)
 
         * Soluciones híbridas.
     * ¿Existen nuevas alternativas de software para proveer servicios?
