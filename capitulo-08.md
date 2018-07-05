@@ -57,7 +57,7 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
         Usuario: " ctpci9x(05) + 00001853. The current application will be..."
         ```
 
-        ![BSOD](images/bluee_screen_of_death.png)
+![BSOD](images/bluee_screen_of_death.png)
 
 * En el sentido inverso, se debe evitar dar detalles técnicos innecesarios o
   incomprensibles para el usuario al momento de resolver un problema.
