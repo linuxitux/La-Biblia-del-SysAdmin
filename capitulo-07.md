@@ -126,9 +126,7 @@ SysAdmin: instalar, configurar y mantener software.
     * Y como regla general: jamás actualizar un sistema un viernes.
       Preferentemente no hacer nada un viernes.
 
-<center>
 ![Read only friday](images/walter-sobchak-read-only-friday.png)
-</center>
 
 * Instalar sólo aquel software que será realmente utilizado.
     * Todo software innecesario puede contener vulnerabilidades. Sin contar con
