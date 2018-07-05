@@ -159,7 +159,7 @@ SysAdmin: instalar, configurar y mantener software.
           instalación.
             * Nunca dejar que una pieza de software por fuera del gestor de
               paquetes se instale en los directorios de binarios del sistema
-              (`/bin`, `/sbin`/, `/usr/bin`, `/usr/sbin`, etc.).
+              (`/bin`, `/sbin`, `/usr/bin`, `/usr/sbin`, etc.).
         * Antes de instalarlo, pensar en la necesidad de desinstalarlo en un
           futuro. ¿Incluye un mecanismo o script de desinstalación?
         * Documentar todas las rutas y archivos creados durante la instalación,
