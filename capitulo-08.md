@@ -62,7 +62,8 @@ SysAdmin: lidiar con usuarios y resolver sus problemas.
 * En el sentido inverso, se debe evitar dar detalles técnicos innecesarios o
   incomprensibles para el usuario al momento de resolver un problema.
     * No "aburrir" al usuario con detalles de bajo nivel que no comprende.
-        * *"you don't want to end up in the middle of invalid memory!"*
+        * *"you don't want to end up in the middle of invalid memory! ...
+          Hello?"*
     * Muchas veces no es conveniente que el usuario conozca detalles de la
       implementación de un sistema o aplicación.
         * No sólo desde el punto de vista de la seguridad, sino también desde
