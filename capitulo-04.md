@@ -60,7 +60,7 @@ esencial y algo que todo SysAdmin debe demandar.
       [`sftp`](https://www.linuxito.com/gnu-linux/nivel-alto/187-configurar-sftp-en-red-hat-enterprise-linux-5-5),
       [`dig`](https://www.linuxito.com/gnu-linux/nivel-alto/242-como-instalar-dig-en-red-hat-fedora-centos),
       `ping`, `traceroute`, [`openssl`](https://www.linuxito.com/seguridad/366-verificar-conexiones-ssl-tls-desde-linea-de-comandos-con-openssl),
-      , `host`, `nslookup`, `arp`, etc.
+      `host`, `nslookup`, `arp`, etc.
     * Aprender a [interactuar con los protocolos de red](https://www.linuxito.com/gnu-linux/nivel-medio/328-interactuar-con-un-servidor-de-correo-pop-mediante-telnet-netcat)
       más utilizados: HTTP, FTP, SMTP, POP3, etc.
 * Aprender a implementar *port forwarding* y túneles SSH.
