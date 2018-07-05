@@ -11,10 +11,10 @@ seguridad y backups.
         * Que información importante se pierda o borre y no exista una copia de
           seguridad (backup).
         * Que un servicio deje de funcionar.
-    Los [esquemas de backup](https://www.linuxito.com/gnu-linux/nivel-alto/564-como-crear-un-esquema-de-backup-simple-para-tu-vps),
-    seguridad (hardening) y PRD (Plan de Recuperación ante Desastres) deben ser
-    las primeras ocupaciones al momento de instalar/configurar un sistema o
-    aplicación, y deben tener la mayor prioridad.
+    * Los [esquemas de backup](https://www.linuxito.com/gnu-linux/nivel-alto/564-como-crear-un-esquema-de-backup-simple-para-tu-vps),
+      seguridad (hardening) y PRD (Plan de Recuperación ante Desastres) deben ser
+      las primeras ocupaciones al momento de instalar/configurar un sistema o
+      aplicación, y deben tener la mayor prioridad.
     * En ciertas empresas es necesario luchar a capa y espada (es decir,
       argumentos y justificaciones), todos los días, contra el mal *management*
       que sólo quiere que las cosas funcionen rápido y fácil, para luego "cuando
